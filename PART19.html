@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        body {
+            padding: 23px;
+        }
+
+        .container {
+            border: 4px solid rgb(173, 70, 70);
+            background-color: rgb(65, 149, 68);
+            padding: 34px;
+            margin: auto;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: rgb(255, 247, 0);
+            background-color: crimson;
+        }
+        
+        button {
+            text-decoration: none;
+            color: black;
+        }
+        
+        
+        
+        a:visited {
+            background-color: yellow;
+        }
+        
+        a:active {
+            background-color: darkblue;
+        }
+        
+        .btm {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: rgb(238, 255, 0);
+            padding: 2px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btm:hover{
+            color: rgb(255, 247, 4);
+            background-color: crimson;
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="conte1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus reiciendis animi rerum
+            facilis, iste ab enim cupiditate veritatis dolores odit recusandae possimus itaque dicta amet id placeat
+            distinctio rem quasi ducimus facere non.</p>
+        <a href="https://facebook.com" class="btm">Read more</a>
+        <button class="btm">Contact us</button>
+    </div>
+
+</html>
