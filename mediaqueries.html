@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        .box{
+            background-color: rgb(203, 0, 0);
+            color: rgb(255, 251, 251);
+            text-align: center;
+            font-size: 72px;
+            display: none;
+        }
+        @media(max-width:300px) {
+           #box-1{
+               display: block;
+               background-color: blueviolet;
+           }  
+        }
+        @media(min-width:300px) and (max-width:500px) {
+           #box-2{
+               display: block;
+               background-color: rgb(57, 146, 116);
+           }  
+        }
+        @media(min-width:500px) and (max-width:550px) {
+           #box-3{
+               display: block;
+               background-color: rgb(136, 138, 49);
+           }  
+        }
+        @media(min-width:550px){
+           #box-3{
+               display: block;
+               color: black;
+               background-color: rgb(183, 183, 62);
+           }  
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">MAI AK IPHONE HOON</div>
+    <div class="box" id="box-2">MAI AK TABLET HOON</div>
+    <div class="box" id="box-3">MAI AK COMPUTER HOON</div>
+    <div class="box" id="box-4">MAI AK WIDESCREEN COMPUTER HOON</div>
+</body>
+</html>
