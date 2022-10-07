@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after psuedo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        section {
+            
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            margin: 3px 230px;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            
+        } /*for clear visibablilty of text when we apply a background */
+
+        .navigation {
+            /*display flex karne se sab by default row me aa jata hai*/
+            font-family: 'Roboto Condensed', sans-serif;
+            display: flex;
+            padding: 5px 488px;
+        }
+
+        li {
+            list-style: none;
+            padding: 32px 41px;
+            color: orangered;
+
+        }
+
+        /* section::after {
+            content: "this a content";
+        } */
+        h1{
+            font-size: 4rem;
+            font-family: 'Bungee Spice', cursive;
+        }
+        p{
+           text-align: center; 
+           font-family: 'Bungee Spice', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav function is generally used with header -->
+    <header>
+        <nav class="navbar">
+
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to Coding World</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique numquam mollitia cumque quidem porro
+                voluptates. Debitis, similique? Excepturi velit cumque, tempora consequatur fugit inventore? Non
+                praesentium explicabo voluptate asperiores sunt nulla necessitatibus fugiat rerum.</p>
+        </section>
+        <hr>
+</body>
+
+</html>
