@@ -1,0 +1,34 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+.main{
+    height: 300px;
+    width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(72, 72, 72);
+}
+.center-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    height: 100vh;
+}
+.dark-mode{
+    background:rgb(36, 35, 35);
+    color: white;
+}
+.progress{
+    position: absolute;
+    animation:progress 5s infinite;
+    left: 30px;
+    top: 0px;
+    height: 30px;
+    width: 90vw;
+    background-image: linear-gradient(to right,purple,rgb(189, 170, 61),cyan);
+    border-radius: 34px;
+}
+@keyframes progress{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
